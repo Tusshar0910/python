@@ -1,0 +1,26 @@
+#!/bin/pyhton3
+
+import math 
+import os
+import random
+import re
+import sys
+
+'''
+n is odd print(Weird)
+n is even in range of (2,6)print(Not weird)
+n in even in range of(6,10)print(Weird)
+n in even anf greater than 20 print(Not Weird)
+'''
+
+if __name__=='__main__':
+    n = int(input().strip())
+if n%2!=0:
+    print('Weird')
+else:
+     if n in range (2,6):  #2,3,4,5
+         print('Not Weird')
+     elif n in range(6,21):
+         print('Weird')
+     else:
+          print('Not Weird')
